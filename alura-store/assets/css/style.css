@@ -1,14 +1,31 @@
 .app {
-    background: #f1f1f1;
-    display: grid;  
-    font-family: Arial, Helvetica, sans-serif;
+  background: #f1f1f1;
+  display: grid;  
+  font-family: Arial, Helvetica, sans-serif;
+    
+  /*aqui passamos dentro das strings todas as areas do site*/
+  grid-template-areas: 
+    "cabecalho"
+    "conteudo"
+    "rodape";
+    
+  /*aqui dizemos qual sera o tamanho das colunas e das linhas, teremos uma so que e a que consta nas linhas acima*/
+  grid-template-columns: auto; /*1 columa, tamanho automatico*/
+  grid-template-rows: 50px 100vh auto; /*tamanho das linhas automatico, cabeçalho com linha maior*/
+       
 }
-
+/*com o area grid definimos a area ref do grid que foi criada no template, dizemos aonde deve ficar os elementos*/
 .cabecalho {
+  background:#00cc99;
+  grid-area: cabecalho; 
 }
  
 .conteudo {
+  background: #ff8080;
+  grid-area: conteudo; 
 }
 
 .rodape {
+  background: #0099ff;
+  grid-area: rodape; /**/
 }
