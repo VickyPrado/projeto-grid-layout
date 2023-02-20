@@ -16,16 +16,13 @@
 }
 /*com o area grid definimos a area ref do grid que foi criada no template, dizemos aonde deve ficar os elementos*/
 .cabecalho {
-  background:#00cc99;
   grid-area: cabecalho; 
 }
  
-.conteudo {
-  background: #ff8080;
+.conteudo {  
   grid-area: conteudo; 
 }
 
-.rodape {
-  background: #0099ff;
+.rodape {  
   grid-area: rodape; /**/
 }
